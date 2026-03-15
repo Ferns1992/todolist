@@ -6,7 +6,9 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY server.js ./
+COPY package.json ./
+COPY public ./public
 
 RUN mkdir -p data
 
